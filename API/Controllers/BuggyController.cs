@@ -3,10 +3,13 @@ using API.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers {
-    public class BuggyController : BaseApiController {
+namespace API.Controllers
+{
+    public class BuggyController : BaseApiController
+    {
         private readonly DataContext _context;
-        public BuggyController (DataContext context) {
+        public BuggyController(DataContext context)
+        {
             _context = context;
         }
 
